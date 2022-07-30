@@ -15,25 +15,22 @@ public class App {
         int origem = entradaOrigem.nextInt();
         int destino = entradaDestino.nextInt();
         int duracao = entradaDuracao.nextInt();
-
-        float tarifa = (float) 0.0;
+        
 
         switch (origem) {
             case 11:
               switch (destino) {
-                case 16: tarifa = (float) 1.9;
-                System.out.println("Valor Total = " + duracao * tarifa);
+                case 16:
+                System.out.println("Valor Total = " + duracao * 1.9);
                 break;
-                case 17: tarifa = (float) 1.8;
-                System.out.println("Valor Total = " + duracao * tarifa);
+                case 17:
+                System.out.println("Valor Total = " + duracao * 1.8);
                 break;
-                case 18: tarifa = (float) 0.9;
-                System.out.println("Valor Total = " + duracao * tarifa);
+                case 18:
+                System.out.println("Valor Total = " + duracao * 0.9);
                 break;
               }
         }
-
-        System.out.println(tarifa);
 
     }
 }
