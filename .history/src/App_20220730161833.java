@@ -60,10 +60,12 @@ public class App {
           System.out.println("Com o Plano Fale Mais " +plano+ " você não paga nada por essa ligação");
         }else{
           int   minExcendente = duracao - plano;
-          Float percentual = (float) (10.0 / 100.0);
-          Float tarifaCorrigida = tarifa + (percentual * tarifa);
+          Float percentual = (float) (100.0 / 10.0);
+          Float tarifaCorrigida = tarifa +(percentual * tarifa);
           Float valor =  minExcendente * tarifaCorrigida;
-          System.out.println("Com o Plano Fale Mais " +plano+ " você irá pagar R$: " +valor);
+          System.out.println("Com o Plano Fale Mais " +plano+ " você vai pagar R$: " +valor);
+
+          System.out.println(minExcendente + "-" + percentual);
         }
         
     }
