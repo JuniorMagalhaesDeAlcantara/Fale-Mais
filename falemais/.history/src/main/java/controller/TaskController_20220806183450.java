@@ -14,10 +14,10 @@ import model.Task;
 public class TaskController {
 
     @GetMapping("/index")
-    public String create() {
+    public String index(Model model) {
+      model.addAttribute("valor", "Teste");
         return "index";
     }
-
 
 
     @PostMapping("/index")

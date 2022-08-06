@@ -18,6 +18,13 @@ public class TaskController {
         return "index";
     }
 
+    @GetMapping("/index")
+    public String index(ModelMap model) {
+      model.addAttribute("valor", "valor");
+        return "index";
+    }
+    
+
 
 
     @PostMapping("/index")

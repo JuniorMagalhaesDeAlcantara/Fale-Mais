@@ -19,7 +19,6 @@ public class TaskController {
     }
 
 
-
     @PostMapping("/index")
     public void entrada(Task task){
         System.out.println("Duração é : " + task.getDuracao());
